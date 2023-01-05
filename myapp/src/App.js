@@ -4,16 +4,29 @@ import Jsx2 from "./components/03-jsx/jsx2";
 import Jsx3 from "./components/03-jsx/jsx3";
 import Jsx4 from "./components/03-jsx/jsx4";
 import Jsx5 from "./components/03-jsx/jsx5";
+import Jsx6 from "./components/03-jsx/Jsx6";
+import Style1 from "./components/04-styles/Style1";
+import Style2 from "./components/04-styles/Style2";
+import Style3 from "./components/04-styles/Style3";
+import Style4 from "./components/04-styles/Style4";
+import Clock1 from "./components/05-clock-1/Clock1";
 
 const App = () => {
   return (
     <div>
-      {/*   <HelloWorld />
+      {/*  
+      <HelloWorld />
       <Jsx1 />
-      <Jsx2 /> 
-      
-      <Jsx3 /><Jsx4 />*/}
+      <Jsx2 />       
+      <Jsx3 />
+      <Jsx4 />
       <Jsx5 />
+      <Jsx6 />
+      <Style1 />
+      <Style2 />
+      <Style3 />
+      <Style4 />*/}
+      <Clock1 />
     </div>
   );
 };
