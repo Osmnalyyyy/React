@@ -40,3 +40,26 @@ li {
   width: 1000px;
   margin: 0 auto;
 }
+
+.btn-default {
+  color: #fff;
+  background-color: #5655da;
+  border: 0;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 8px 16px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #5655da;
+  border: 0;
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    width: 100%;
+  }
+}
