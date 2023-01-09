@@ -2,7 +2,7 @@ import React from "react";
 import {
   TfiFacebook,
   TfiTwitterAlt,
-  TfiYoutube,
+  TfiInstagram,
   TfiLinkedin,
   TfiGithub,
 } from "react-icons/tfi";
@@ -13,27 +13,33 @@ const SocialIcons = () => {
     <div className="social-icons">
       <ul>
         <li>
-          <a href="#">
+          <a
+            href="https://www.facebook.com/profile.php?id=717589294"
+            target={"_blank"}
+          >
             <TfiFacebook />
           </a>
         </li>
-        <li>
-          <a href="#">
+        {/* <li>
+          <a href="#" target={"_blank"}>
             <TfiTwitterAlt />
           </a>
-        </li>
+        </li> */}
         <li>
-          <a href="#">
-            <TfiYoutube />
+          <a href="https://www.instagram.com/osmanli_sevinc/" target={"_blank"}>
+            <TfiInstagram />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/osman-ali-sevinc/"
+            target={"_blank"}
+          >
             <TfiLinkedin />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://github.com/Osmnalyyyy" target={"_blank"}>
             <TfiGithub />
           </a>
         </li>

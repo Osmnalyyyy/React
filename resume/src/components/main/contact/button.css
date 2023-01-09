@@ -1,0 +1,18 @@
+.btn-default {
+  color: #fff;
+  background-color: #5655da;
+  border: 0;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 8px 16px;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: blue;
+  border: 0;
+}

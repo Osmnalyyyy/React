@@ -8,13 +8,13 @@ const MainNavbar = () => {
           <a href="#about">About Me</a>
         </li>
         <li>
-          <a href="#experience">Expereince</a>
+          <a href="#experience">Experience</a>
         </li>
         <li>
           <a href="#education">Education</a>
         </li>
         <li>
-          <a href="#testimonials">Testimonals</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
           <a href="#contact">Contact</a>

@@ -1,0 +1,30 @@
+.resume .top-item {
+  margin-top: 0 !important;
+}
+
+.resume .resume-item {
+  background: #fff;
+  margin-top: 60px;
+  max-height: 140px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.resume .resume-item h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+.resume .resume-item h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+
+.resume .resume-item span {
+  color: rgb(61, 54, 54);
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0 0 10px;
+}

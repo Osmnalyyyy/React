@@ -13,6 +13,9 @@ import Clock1 from "./components/05-clock-1/Clock1";
 import Greetings from "./components/06-props/Greetings";
 import Products from "./components/07-props/Products";
 import Clock2 from "./components/08-clock-2/Clock2";
+import Gallery from "./components/09-image/Gallery";
+import Image from "./components/09-image/Image";
+import ProfileCard from "./components/10-profile-card/ProfileCard";
 
 const App = () => {
   return (
@@ -31,8 +34,18 @@ const App = () => {
       <Style4 />
       <Clock1 />
       <Greetings />
-      <Products />*/}
+      <Products />
       <Clock2 textColor="red" bgColor="yellow" />
+      <Image />
+      <Gallery />*/}
+      <ProfileCard
+        avatar="profile.jpg"
+        name="Natasha Yulichenco"
+        location="Türkiye, Isparta"
+        shot="1"
+        followers="2"
+        following="4"
+      />
     </div>
   );
 };

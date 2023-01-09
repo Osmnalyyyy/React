@@ -1,15 +1,20 @@
 import React from "react";
 import About from "./about/About";
-import Intro from "./about/intro/Intro";
-import Education from "./education/Education";
+
+import Contacts from "./contact/Contacts";
+import Educations from "./education/Educations";
 import Experiences from "./experiences/Experiences";
 import "./main.css";
+import Projects from "./projects/Projects";
+
 const Main = () => {
   return (
     <div className="main-content pull-right">
       <About />
       <Experiences />
-      <Education />
+      <Educations />
+      <Projects />
+      <Contacts />
     </div>
   );
 };

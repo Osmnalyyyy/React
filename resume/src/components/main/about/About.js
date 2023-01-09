@@ -6,7 +6,7 @@ import Skills from "./skills/Skills";
 const About = () => {
   return (
     <section id="about" className="about">
-      <SectionHeader title="About Us" isButtonVisible={true} />
+      <SectionHeader title="About Me" isButtonVisible={true} />
       <Intro />
       <Skills />
     </section>

@@ -4,24 +4,32 @@ const Intro = () => {
   return (
     <div className="intro">
       <p>
-        Hello, My name is John Doe. Lorem ipsum dolor sit amet, usu sumo dicant
-        vulputate in. Quando fabellas adipiscing nam an. An vis congue oporteat,
-        no eros facer suavitate eos. An debet affert aliquid ius. Veritus
-        placerat est ea, est ne nominavi suscipit maluisset.
+        I was graduated from Yıldız Technical Univercity Mechanical Engineering
+        in 2013. After graduation l worked as engineer for many years, however
+        meantime because of matlab lesson that l had in university l got
+        interested in coding lesson eventually l decided to pursue my dreams
+        thus l quit engineering and l wanted to open the door of the software
+        world, it was not easy at the top to make desicion nevertheless now l am
+        one the person who is coding the future though. The fact that the
+        projects are done by team also encouraged me because I've always been a
+        good team member. I have adopted the principle of continuous research,
+        establishing strong communication with the environment and doing my work
+        on the time. Since I am an engineer, I can look at problems more
+        practically and solution-oriented, and this makes my work even easier.
       </p>
 
       <ul className="info">
         <li>
-          <strong>Birthday:</strong> August 14, 1982
+          <strong>Email:</strong> sevincosmanali@gmail.com
         </li>
         <li>
-          <strong>Location:</strong> Central Main Rd, Australia
+          <strong>Phone:</strong> +90 533 598 95 39
         </li>
         <li>
-          <strong>Email:</strong> contact@yourmail.com
+          <strong>Birthday:</strong> January 1, 1990
         </li>
         <li>
-          <strong>Phone:</strong> +111 1234-1234
+          <strong>Location:</strong>Isparta, Turkey
         </li>
       </ul>
     </div>
