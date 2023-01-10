@@ -16,6 +16,11 @@ import Clock2 from "./components/08-clock-2/Clock2";
 import Gallery from "./components/09-image/Gallery";
 import Image from "./components/09-image/Image";
 import ProfileCard from "./components/10-profile-card/ProfileCard";
+import BootstrapDinamic from "./components/11-bootstrap/BootstrapDinamic";
+import BootstrapStatic from "./components/11-bootstrap/BootstrapStatic";
+import Icon from "./components/12-icons/Icon";
+import Events from "./components/13-events/Events";
+import Shop from "./components/14-products/Shop";
 
 const App = () => {
   return (
@@ -37,7 +42,7 @@ const App = () => {
       <Products />
       <Clock2 textColor="red" bgColor="yellow" />
       <Image />
-      <Gallery />*/}
+      <Gallery />
       <ProfileCard
         avatar="profile.jpg"
         name="Natasha Yulichenco"
@@ -46,6 +51,11 @@ const App = () => {
         followers="2"
         following="4"
       />
+      <BootstrapStatic />
+      <BootstrapDinamic />
+      <Icon />
+      <Events />*/}
+      <Shop />
     </div>
   );
 };
