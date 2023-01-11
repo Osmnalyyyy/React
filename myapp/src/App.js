@@ -21,6 +21,10 @@ import BootstrapStatic from "./components/11-bootstrap/BootstrapStatic";
 import Icon from "./components/12-icons/Icon";
 import Events from "./components/13-events/Events";
 import Shop from "./components/14-products/Shop";
+import State from "./components/15-useState/State";
+import Stateless from "./components/15-useState/Stateless";
+import Counter from "./components/16-counter/Counter";
+import Birthday from "./components/17-birthday/Birthday";
 
 const App = () => {
   return (
@@ -54,8 +58,12 @@ const App = () => {
       <BootstrapStatic />
       <BootstrapDinamic />
       <Icon />
-      <Events />*/}
+      <Events />
       <Shop />
+      <Stateless />
+      <State />
+      <Counter />*/}
+      <Birthday />
     </div>
   );
 };
