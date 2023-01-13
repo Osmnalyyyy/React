@@ -9,17 +9,17 @@ const UseEffect = ({ id }) => {
     `Bu satır render ve re-render durumlarında ve 
     alttaki return kısmı render edilmeden önce çalıştırılır`
   );
-  useEffect(() => {
-    console.log(
-      `MOUNTING: Bu satır sadece render durumunda çalışır.
-      Ancak re-render durumunda çalışmaz`
-    );
-  }, []);
 
   useEffect(() => {
+    console.log(`
+        MOUNTING: Bu bölümdeki kodlar sadece render durumunda çalışır.
+        Ancak re-render larda çalışmaz.
+    `);
+
     return () => {
       console.log(`
-        UNMOUNTING: Bu bölüm component hafızadan atılmadan hemen önce çalıştırılır`);
+            UNMOUNTING: Bu bölüm component hafızadan atılmadan hemen önce çalıştırılır.
+        `);
     };
   }, []);
 
@@ -27,7 +27,7 @@ const UseEffect = ({ id }) => {
     console.log(
       `UPDATING: Bu satır render ve re-render durumlarında ve alttaki 
       return kısmı render edildikten sonra çalıştırılır.
-      Bu useEffect allaki elementlere useRef ile erişmek için kullanılır`
+      Bu useEffect özellikle alttaki elementlere useRef ile erişmek için kullanılır`
     );
   });
 
