@@ -2,9 +2,9 @@ import { Component } from "react";
 
 class ClassComp extends Component {
   constructor(props) {
-    //props ları buraad karşılıyoruz
+    //props ları burada karşılıyoruz
 
-    // props lar extend edilen class ın constructor ına gönderilemlidir.
+    // props lar extend edilen class ın constructor ına gönderilmelidir.
     super(props);
 
     this.state = {

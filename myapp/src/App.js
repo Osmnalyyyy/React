@@ -32,6 +32,8 @@ import CountryFilter from "./components/20-country-filter/CountryFilter";
 import Scroll from "./components/21-useRef/Scroll";
 import UseRef from "./components/21-useRef/UseRef";
 import ClassComp from "./components/22-class-type-components/ClassTypeComponent";
+import UserCards from "./components/23-fetch-users/UserCards";
+import Countries from "./components/24-axios-countries/Countries";
 
 const App = () => {
   return (
@@ -65,7 +67,7 @@ const App = () => {
       <BootstrapStatic />
       <BootstrapDinamic />
       <Icon />
-      <Events />
+      <Events /> 
       <Shop />
       <Stateless />
       <State />
@@ -76,8 +78,10 @@ const App = () => {
       <UseEffect1 />
       <CountryFilter />
       <UseRef />
-      <Scroll />*/}
+      <Scroll />
       <ClassComp />
+      <UserCards />*/}
+      <Countries />
     </div>
   );
 };
