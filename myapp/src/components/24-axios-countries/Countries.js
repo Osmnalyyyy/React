@@ -6,17 +6,20 @@ const Countries = () => {
   const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const ulkeler = countries;
   const loadData = async () => {
-    const resp = await axios.get("https://restcountries.com/v3.1/all");
-    setCountries(resp.data);
-    setLoading(false);
+    try {
+      const resp = await axios.get("https://restcountries.com/v3.1/all");
+      setCountries(resp.data);
+      setLoading(false);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   useEffect(() => {
     loadData();
   }, []);
-  console.log(ulkeler);
+
   return (
     <Table striped bordered hover>
       {loading && <Spinner animation="border" variant="primary" />}
@@ -40,6 +43,14 @@ const Countries = () => {
             <td>{country.name.common}</td>
             <td>{country.population}</td>
             <td>{country.capital}</td>
+            <td>
+              {" "}
+              {country.currencies
+                ? Object.keys(country.currencies)
+                    .map((cur) => country.currencies[cur].name)
+                    .join("-")
+                : ""}
+            </td>
           </tr>
         ))}
       </tbody>
