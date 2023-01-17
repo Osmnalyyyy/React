@@ -1,4 +1,9 @@
+import { Container, Row, Col } from "react-bootstrap";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/00-home/header/Header";
+import Menu from "./components/00-home/menu/Menu";
 import HelloWorld from "./components/01-hello-world/hello-world";
+import HelloReact from "./components/02-hello-react/hello-react";
 import Jsx1 from "./components/03-jsx/jsx1";
 import Jsx2 from "./components/03-jsx/jsx2";
 import Jsx3 from "./components/03-jsx/jsx3";
@@ -38,10 +43,32 @@ import ParentComp from "./components/25-child-to-parent/ParentComp";
 import Form1 from "./components/26-forms/Form1";
 import Form2 from "./components/26-forms/Form2";
 import Form3 from "./components/26-forms/Form3";
+import Form4 from "./components/26-forms/Form4";
+import Form5 from "./components/26-forms/Form5";
+import Form6 from "./components/26-forms/Form6";
 
 const App = () => {
   return (
-    <div>
+    <BrowserRouter>
+      <Header />
+      <Container fluid>
+        <Row>
+          <Col sm={2}>
+            <Menu />
+          </Col>
+          <Col sm={10}>
+            <Routes>
+              <Route path="/hello-world" element={<HelloWorld />} />
+              <Route path="/hello-react" element={<HelloReact />} />
+              <Route path="/jsx1" element={<Jsx1 />} />
+              <Route path="/jsx2" element={<Jsx2 />} />
+              <Route path="/jsx3" element={<Jsx3 />} />
+              <Route path="/jsx4" element={<Jsx4 />} />
+              <Route path="/jsx5" element={<Jsx5 />} />
+            </Routes>
+          </Col>
+        </Row>
+      </Container>
       {/*  
       <HelloWorld />
       <Jsx1 />
@@ -88,9 +115,12 @@ const App = () => {
       <Countries />
       <ParentComp />
       <Form1 />
-      <Form2 />*/}
+      <Form2 />
       <Form3 />
-    </div>
+      <Form4 />
+      <Form5 />
+      <Form6 />*/}
+    </BrowserRouter>
   );
 };
 

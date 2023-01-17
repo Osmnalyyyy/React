@@ -3,6 +3,7 @@ import { Container, Form } from "react-bootstrap";
 
 const Form1 = () => {
   const [name, setName] = useState("");
+
   return (
     <Container>
       <Form>
@@ -11,6 +12,7 @@ const Form1 = () => {
           type="text"
           placeholder="Enter your name"
           onChange={(e) => setName(e.target.value)}
+          value={name}
         />
       </Form>
     </Container>
