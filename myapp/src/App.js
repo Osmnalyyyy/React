@@ -1,3 +1,5 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/00-home/header/Header";
@@ -45,31 +47,57 @@ import Form2 from "./components/26-forms/Form2";
 import Form3 from "./components/26-forms/Form3";
 import Form4 from "./components/26-forms/Form4";
 import Form5 from "./components/26-forms/Form5";
+import Form5Tekrar from "./components/26-forms/Form5Tekrar";
 import Form6 from "./components/26-forms/Form6";
+import Form6Tekrar from "./components/26-forms/Form6Tekrar";
+import Exchance from "./components/27-context-api/Exchance";
+import StoreContext from "./store";
 
 const App = () => {
+  const [counter, setCounter] = useState(10);
+  const [currencies, setCurrencies] = useState({});
+
+  const loadData = async () => {
+    try {
+      const resp = await axios.get(
+        "https://api.frankfurter.app/latest?from=TRY"
+      );
+      setCurrencies(resp.data.rates);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    loadData();
+  }, []);
+
   return (
-    <BrowserRouter>
-      <Header />
-      <Container fluid>
-        <Row>
-          <Col sm={2}>
-            <Menu />
-          </Col>
-          <Col sm={10}>
-            <Routes>
-              <Route path="/hello-world" element={<HelloWorld />} />
-              <Route path="/hello-react" element={<HelloReact />} />
-              <Route path="/jsx1" element={<Jsx1 />} />
-              <Route path="/jsx2" element={<Jsx2 />} />
-              <Route path="/jsx3" element={<Jsx3 />} />
-              <Route path="/jsx4" element={<Jsx4 />} />
-              <Route path="/jsx5" element={<Jsx5 />} />
-            </Routes>
-          </Col>
-        </Row>
-      </Container>
-      {/*  
+    <StoreContext.Provider value={{ counter, setCounter, currencies }}>
+      <BrowserRouter>
+        <Header />
+        <Container fluid>
+          <Row>
+            <Col sm={2}>
+              <Menu />
+            </Col>
+            <Col sm={10}>
+              <Routes>
+                <Route path="/hello-world" element={<HelloWorld />} />
+                <Route path="/hello-react" element={<HelloReact />} />
+                <Route path="/jsx1" element={<Jsx1 />} />
+                <Route path="/jsx2" element={<Jsx2 />} />
+                <Route path="/jsx3" element={<Jsx3 />} />
+                <Route path="/jsx4" element={<Jsx4 />} />
+                <Route path="/jsx5" element={<Jsx5 />} />
+                <Route path="/Form5Tekrar" element={<Form5Tekrar />} />
+                <Route path="/Form6Tekrar" element={<Form6Tekrar />} />
+                <Route path="/Exchange" element={<Exchance />} />
+              </Routes>
+            </Col>
+          </Row>
+        </Container>
+        {/*             
       <HelloWorld />
       <Jsx1 />
       <Jsx2 />       
@@ -120,7 +148,8 @@ const App = () => {
       <Form4 />
       <Form5 />
       <Form6 />*/}
-    </BrowserRouter>
+      </BrowserRouter>
+    </StoreContext.Provider>
   );
 };
 

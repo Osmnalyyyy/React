@@ -24,6 +24,15 @@ const Menu = () => {
         </li>
         <li>
           <Link to="/jsx5">JSX5</Link>
+        </li>{" "}
+        <li>
+          <Link to="/Form5Tekrar">Form5 Tekrar</Link>
+        </li>{" "}
+        <li>
+          <Link to="/Form6Tekrar">Form6 Tekrar</Link>
+        </li>{" "}
+        <li>
+          <Link to="/Exchange">Exchange</Link>
         </li>
       </ul>
     </nav>

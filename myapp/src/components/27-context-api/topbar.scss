@@ -1,0 +1,17 @@
+.exchange{
+    background-color: yellow;
+    padding: 1rem;
+    color: red;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+>div{
+        display: flex;
+     gap: 2rem;
+}
+    }
+}
