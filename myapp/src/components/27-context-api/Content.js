@@ -27,7 +27,7 @@ const Content = () => {
           <option value="USD">USD</option>
           <option value="EUR">EUR</option>
         </Form.Select>
-        <InputGroup.Text id="basic-addon1">{result}</InputGroup.Text>
+        <InputGroup.Text id="basic-addon1">result : {result}</InputGroup.Text>
       </InputGroup>
     </div>
   );
